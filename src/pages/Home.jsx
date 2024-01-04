@@ -39,10 +39,10 @@ const Home = () => {
            <motion.img 
             drag
             dragConstraints={{
-              top: -50,
-              left: -50,
-              right: 50,
-              bottom: 50,
+              top: -150,
+              left: -150,
+              right: 150,
+              bottom: 150,
             }}
            src="/myPhoto.jpeg" className='w-221 rounded-full h-[50%]' alt="" /> 
           </div>
