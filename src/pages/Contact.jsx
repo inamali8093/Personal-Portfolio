@@ -3,9 +3,18 @@ import ContactContainer from '../components/ContactContainer'
 import { Mail,PhoneCall,Linkedin,Copy,Navigation, Instagram } from 'react-feather'
 import { Link } from 'react-router-dom'
 import SideToSideAnimation from '../components/SideToSideAnimation'
+import { motion,useTime,useTransform } from "framer-motion"
 
 
 const Contact = () => {
+
+  const time = useTime()
+const rotate = useTransform(
+  time,
+  [0, 4000], // For every 4 seconds...
+  [0, 360], // ...rotate 360deg
+  { clamp: false }
+)
 
     const email = 'inamali0291@gmail.com'
     const number = '+91-6396763320'
@@ -93,7 +102,9 @@ const Contact = () => {
     
 
       <div className='hidden md:flex'>
-        <img src="/or.png" alt="" className='w-[100px]' />
+        <motion.img 
+        style={{rotate}}
+        src="/or.png" alt="OR" className='w-[100px]' />
       </div>
 
       <div className='text-white text-2xl font-bold flex flex-col justify-center items-center md:hidden'>

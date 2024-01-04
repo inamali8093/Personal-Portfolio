@@ -2,9 +2,18 @@ import React,{useCallback} from 'react'
 import { Link } from 'react-router-dom'
 import SideToSideAnimation from '../components/SideToSideAnimation'
 import DownToUpAnimation from '../components/DownToUpAnimation'
+import {motion,useTime,useTransform} from 'framer-motion'
 
 
 const Education = () => {
+
+  const time = useTime()
+  const rotate = useTransform(
+    time,
+    [0, 4000], // For every 4 seconds...
+    [0, 360], // ...rotate 360deg
+    { clamp: false }
+  )
 
   const handleCopy1 = useCallback(()=>{
     emailRef.current?.select()
@@ -23,7 +32,7 @@ const Education = () => {
       <DownToUpAnimation initialY={75}>
       <h2 className='text-[rgb(200,111,67)] text-4xl mb-6 md:mb-0 text-center font-bold'>About Me
       </h2>
-          <div className='w-full h-full md:h-[70%] flex items-center justify-center bg-cover bg-center'>
+          <div className='w-full h-full md:h-[70%] flex items-center justify-center bg-cover bg-center md:mt-6'>
           <div className='text-white w-full px-8'>
 
 
@@ -43,7 +52,9 @@ const Education = () => {
       
       <div className='flex justify-center items-center'>
       <DownToUpAnimation initialY={100} > 
-        <img src="/coding.png" className='w-[300px] ' alt="" />
+        <motion.img src="/react.png"
+        style={{rotate}}
+        className='w-[300px] ' alt="" />
         </DownToUpAnimation>
       </div>
       
@@ -53,7 +64,7 @@ const Education = () => {
       <DownToUpAnimation initialY={75} >
       <h2 className='text-[rgb(200,111,67)] text-4xl text-center font-bold mb-6 md:mb-0'>Education
       </h2>
-          <div className='w-full h-full md:h-[70%] flex items-center justify-center bg-cover bg-center rounded-xl'>
+          <div className='w-full h-full md:h-[70%] flex items-center justify-center bg-cover bg-center rounded-xl md:mt-8'>
           <div className='list-none text-white w-full px-8'>
 
             <div className='my-4'>
