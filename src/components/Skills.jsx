@@ -1,5 +1,6 @@
 import React from 'react'
 import DownToUpAnimation from '../components/DownToUpAnimation'
+import {motion} from "framer-motion"
 
 
 const Skills = () => {
@@ -14,66 +15,93 @@ const Skills = () => {
       <div className='gap-12 md:gap-0 py-32 px-4 flex flex-wrap justify-between items-center'>
 
         <DownToUpAnimation initialY={75}>
-        <div>
+        <motion.div
+        whileHover={{scale:1.1}}
+        whileTap={{scale:0.9}}
+        >
          <img src="/html.png" alt="HTML" className='w-[100px]' />
          <h3 className='text-white text-center text-2xl font-bold'>HTML</h3>
-         </div>
+         </motion.div>
          </DownToUpAnimation>
 
          <DownToUpAnimation initialY={75}>
-         <div>
+         <motion.div
+         whileHover={{scale:1.1}}
+         whileTap={{scale:0.9}}
+         >
          <img src="/css-3.png" alt="CSS" className='w-[100px]' />
          <h3 className='text-white text-center text-2xl font-bold'>CSS</h3>
-         </div>
+         </motion.div>
          </DownToUpAnimation>
 
          <DownToUpAnimation initialY={75}>
-         <div>
+         <motion.div
+        whileHover={{scale:1.1}}
+        whileTap={{scale:0.9}}
+        >
          <img src="/tailwind-css.png" alt="HTML" className='w-[100px]' />
          <h3 className='text-white text-center text-2xl font-bold'>TailwindCSS</h3>
-         </div>
+         </motion.div>
          </DownToUpAnimation>
 
          <DownToUpAnimation initialY={75}>
-         <div>
+         <motion.div
+         whileHover={{scale:1.1}}
+         whileTap={{scale:0.9}}
+         >
          <img src="/bootstrap.png" alt="HTML" className='w-[100px]' />
          <h3 className='text-white text-center text-2xl font-bold'>Bootstrap</h3>
-         </div>
+         </motion.div>
          </DownToUpAnimation>
 
          <DownToUpAnimation initialY={75}>
-         <div>
+         <motion.div
+         whileHover={{scale:1.1}}
+         whileTap={{scale:0.9}}
+         >
          <img src="/js.png" alt="HTML" className='w-[100px] rounded-2xl' />
          <h3 className='text-white text-center text-2xl font-bold'>JavaScript</h3>
-         </div>
+         </motion.div>
          </DownToUpAnimation>
 
          <DownToUpAnimation initialY={75}>
-         <div>
+         <motion.div
+         whileHover={{scale:1.1}}
+         whileTap={{scale:0.9}}
+         >
          <img src="/react.png" alt="HTML" className='w-[100px]' />
          <h3 className='text-white text-center text-2xl font-bold'>REACT</h3>
-         </div>
+         </motion.div>
          </DownToUpAnimation>
 
          <DownToUpAnimation initialY={75}>
-         <div>
+         <motion.div
+         whileHover={{scale:1.1}}
+         whileTap={{scale:0.9}}
+         >
          <img src="/node-js.png" alt="HTML" className='w-[100px]' />
          <h3 className='text-white text-center text-2xl font-bold'>NodeJS</h3>
-         </div>
+         </motion.div>
          </DownToUpAnimation>
 
          <DownToUpAnimation initialY={75}>
-         <div>
+         <motion.div
+         whileHover={{scale:1.1}}
+         whileTap={{scale:0.9}}
+         >
          <img src="/express2.png" alt="HTML" className='w-[100px]' />
          <h3 className='text-white text-center text-2xl font-bold'>ExpressJS</h3>
-         </div>
+         </motion.div>
          </DownToUpAnimation>
 
          <DownToUpAnimation initialY={75}>
-         <div>
+         <motion.div
+         whileHover={{scale:1.1}}
+         whileTap={{scale:0.9}}
+         >
          <img src="/mongodb.png" alt="HTML" className='w-[100px]' />
          <h3 className='text-white text-center text-2xl font-bold'>MongoDB</h3>
-         </div>
+         </motion.div>
          </DownToUpAnimation>
       </div>
       </div>

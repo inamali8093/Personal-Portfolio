@@ -2,10 +2,13 @@ import React from 'react'
 import Skills from '../components/Skills'
 import SideToSideAnimation from '../components/SideToSideAnimation'
 
+
 const Home = () => {
  
   const name = "Inam Ali"
   const image = './webD.jpg'
+
+  
   
   return (
     <>
@@ -36,11 +39,7 @@ const Home = () => {
           </SideToSideAnimation>
         </div>
         
-     </div>
-         
-       
-
-     
+     </div>    
       <Skills />
     </>
   )
