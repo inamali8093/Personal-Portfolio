@@ -39,7 +39,7 @@ const Skills = () => {
         whileHover={{scale:1.1}}
         whileTap={{scale:0.9}}
         >
-         <img src="/tailwind-css.png" alt="HTML" className='w-[100px]' />
+         <img src="/tailwind-css.png" alt="TailwindCSS" className='w-[100px]' />
          <h3 className='text-white text-center text-2xl font-bold'>TailwindCSS</h3>
          </motion.div>
          </DownToUpAnimation>
@@ -49,7 +49,7 @@ const Skills = () => {
          whileHover={{scale:1.1}}
          whileTap={{scale:0.9}}
          >
-         <img src="/bootstrap.png" alt="HTML" className='w-[100px]' />
+         <img src="/bootstrap.png" alt="Bootstrap" className='w-[100px]' />
          <h3 className='text-white text-center text-2xl font-bold'>Bootstrap</h3>
          </motion.div>
          </DownToUpAnimation>
@@ -59,7 +59,7 @@ const Skills = () => {
          whileHover={{scale:1.1}}
          whileTap={{scale:0.9}}
          >
-         <img src="/js.png" alt="HTML" className='w-[100px] rounded-2xl' />
+         <img src="/js.png" alt="Javascript" className='w-[100px] rounded-2xl' />
          <h3 className='text-white text-center text-2xl font-bold'>JavaScript</h3>
          </motion.div>
          </DownToUpAnimation>
@@ -69,7 +69,7 @@ const Skills = () => {
          whileHover={{scale:1.1}}
          whileTap={{scale:0.9}}
          >
-         <img src="/react.png" alt="HTML" className='w-[100px]' />
+         <img src="/react.png" alt="ReactJS" className='w-[100px]' />
          <h3 className='text-white text-center text-2xl font-bold'>REACT</h3>
          </motion.div>
          </DownToUpAnimation>
@@ -79,7 +79,17 @@ const Skills = () => {
          whileHover={{scale:1.1}}
          whileTap={{scale:0.9}}
          >
-         <img src="/node-js.png" alt="HTML" className='w-[100px]' />
+         <img src="/redux.png" alt="Redux" className='w-[100px]' />
+         <h3 className='text-white text-center text-2xl font-bold'>Redux Toolkit</h3>
+         </motion.div>
+         </DownToUpAnimation>
+
+         <DownToUpAnimation initialY={75}>
+         <motion.div
+         whileHover={{scale:1.1}}
+         whileTap={{scale:0.9}}
+         >
+         <img src="/node-js.png" alt="NodeJS" className='w-[100px]' />
          <h3 className='text-white text-center text-2xl font-bold'>NodeJS</h3>
          </motion.div>
          </DownToUpAnimation>
@@ -89,7 +99,7 @@ const Skills = () => {
          whileHover={{scale:1.1}}
          whileTap={{scale:0.9}}
          >
-         <img src="/express2.png" alt="HTML" className='w-[100px]' />
+         <img src="/express2.png" alt="ExpressJS" className='w-[100px]' />
          <h3 className='text-white text-center text-2xl font-bold'>ExpressJS</h3>
          </motion.div>
          </DownToUpAnimation>
@@ -99,7 +109,7 @@ const Skills = () => {
          whileHover={{scale:1.1}}
          whileTap={{scale:0.9}}
          >
-         <img src="/mongodb.png" alt="HTML" className='w-[100px]' />
+         <img src="/mongodb.png" alt="MongoDB" className='w-[100px]' />
          <h3 className='text-white text-center text-2xl font-bold'>MongoDB</h3>
          </motion.div>
          </DownToUpAnimation>
