@@ -54,7 +54,7 @@ const Education = () => {
       <DownToUpAnimation initialY={100} > 
         <motion.img src="/react.png"
         style={{rotate}}
-        className='w-[300px] ' alt="" />
+        className='w-[300px] z-0' alt="" />
         </DownToUpAnimation>
       </div>
       

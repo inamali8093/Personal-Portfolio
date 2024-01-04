@@ -53,10 +53,10 @@ const Header = () => {
   return (
 
    
-    <header className='bg-black text-white top-0 sticky  border-b'>
+    <header className='bg-black text-white top-0 sticky  border-b z-20'>
       <nav className='flex justify-between items-center'>
       <DownToUpAnimation initialY={-100}>
-         <div className='my-4 mx-12 flex items-center font-medium text-lg'>
+         <div className='my-4 mx-12 flex items-center font-medium text-lg hover:font-bold'>
             INAM ALI
          </div>
       </DownToUpAnimation>
