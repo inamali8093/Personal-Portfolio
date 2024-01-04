@@ -32,7 +32,7 @@ const Home = () => {
 
 
        
-        <div className='md:w-[30%] m-12 shadow-lg rounded-xl'>
+        <div className='md:w-[30%]  m-12 shadow-lg rounded-xl'>
         <SideToSideAnimation initialX={100}>
           <div className='w-full flex items-center justify-center bg-cover bg-center rounded-xl  overflow-hidden'style={{backgroundImage:`url(${image})`,height:560,width:442}}
           >
