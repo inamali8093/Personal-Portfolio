@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import {Menu,X} from 'react-feather'
 import DownToUpAnimation from './DownToUpAnimation'
 import SideToSideAnimation from './SideToSideAnimation'
-import {motion} from 'framer-motion'
 
 const Header = () => {
 
@@ -73,12 +72,9 @@ const Header = () => {
          
          <div className="md:hidden flex mx-4">
          <SideToSideAnimation initialX={100}>
-            <motion.div
-            animate = {isOpen? "open":"closed"}
-            varients = {variants}
-            >
+            <div  >
             <button onClick={toggleNavbar}>{isOpen? <X />: <Menu />}</button>
-            </motion.div>
+            </div>
             </SideToSideAnimation>
          </div>
         

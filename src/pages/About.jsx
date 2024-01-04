@@ -1,6 +1,5 @@
 import React,{useCallback} from 'react'
 import { Link } from 'react-router-dom'
-import SideToSideAnimation from '../components/SideToSideAnimation'
 import DownToUpAnimation from '../components/DownToUpAnimation'
 import {motion,useTime,useTransform} from 'framer-motion'
 
