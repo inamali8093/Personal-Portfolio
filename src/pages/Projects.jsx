@@ -8,22 +8,29 @@ const Projects = () => {
   const image = './chatAppSignup.png'
 
   return (
-    <div className='min-h-screen bg-cover flex justify-center items-center flex-col gap-6' style={{backgroundImage: 'url(backgroundGradient-6.jpg)'}}>
+    // <div className='min-h-screen bg-cover flex justify-center items-center flex-col gap-6' style={{backgroundImage: 'url(backgroundGradient-6.jpg)'}}>
 
-      <Header />
+    //   <Header />
       
-      <ProjectContainer image={image}>
-        User can send message in realtime to other users. <br/>
-        In this Project, I have used ReactJS for the frontend, redux toolkit for the state management and I have used Appwrite as the backend and authentication service.
-      </ProjectContainer>
+    //   <ProjectContainer image={image}>
+    //     User can send message in realtime to other users. <br/>
+    //     In this Project, I have used ReactJS for the frontend, redux toolkit for the state management and I have used Appwrite as the backend and authentication service.
+    //   </ProjectContainer>
 
-      <ProjectContainer image={image}>
-        User can write his blog and can read other's blog. <br/>
-        In this project, I have used ReactJS for the frontend, redux tookit for he state management and Appwrite as the backend and authentication service.  
-      </ProjectContainer>  
+    //   <ProjectContainer image={image}>
+    //     User can write his blog and can read other's blog. <br/>
+    //     In this project, I have used ReactJS for the frontend, redux tookit for he state management and Appwrite as the backend and authentication service.  
+    //   </ProjectContainer>  
 
+    //   <Footer />
+
+    // </div>
+     <div className='bg-black'>
+      <Header />
+      <div className='min-h-screen flex justify-center items-center'>
+    <h1 className='text-4xl text-white font-bold '>Updating Soon...</h1>
+    </div>
       <Footer />
-
     </div>
   )
 }
