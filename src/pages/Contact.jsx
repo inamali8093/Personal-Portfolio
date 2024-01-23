@@ -32,7 +32,7 @@ const rotate = useTransform(
 
   return (
     <>
-     <div className='bg-cover bg-center text-white  min-h-screen  flex flex-col justify-between items-center w-full gap-12' style={{backgroundImage: 'url(backgroundGradient-3.jpg)'}}>
+     <div className='bg-cover bg-center text-white  min-h-screen  flex flex-col justify-between items-center w-full gap-12' style={{backgroundImage: 'url(backgroundGradient-5.jpg)'}}>
      
      <Header />
     

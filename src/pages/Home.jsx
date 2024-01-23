@@ -29,7 +29,7 @@ const Home = () => {
   
   return (
     <>
-     <div className='flex flex-col text-white items-center justify-center w-full  bg-cover bg-center' style={{backgroundImage: 'url(./backgroundGradient-5.jpg)'}}>
+     <div className='flex flex-col text-white items-center justify-center w-full  bg-cover bg-center' style={{backgroundImage: 'url(./backgroundGradient-3.jpg)'}}>
 
        <Header />
     

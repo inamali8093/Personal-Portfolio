@@ -12,7 +12,7 @@ const Skills = () => {
       <h2 className='text-4xl text-center font-bold p-8'>Skills</h2>
       </div>
 
-      <div className='gap-12 md:gap-y-16 md:gap-7 py-12 px-4 flex justify-between items-center flex-wrap md:grid md:grid-cols-5'>
+      <div className='gap-8 md:gap-y-16 md:gap-7 py-12 px-4 flex justify-between items-center flex-wrap md:grid md:grid-cols-5'>
 
         <DownToUpAnimation initialY={75}>
         <motion.div
