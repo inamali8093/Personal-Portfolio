@@ -4,6 +4,8 @@ import { Mail,PhoneCall,Linkedin,Copy,Navigation, Instagram } from 'react-feathe
 import { Link } from 'react-router-dom'
 import SideToSideAnimation from '../components/SideToSideAnimation'
 import { motion,useTime,useTransform } from "framer-motion"
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 
 const Contact = () => {
@@ -30,11 +32,12 @@ const rotate = useTransform(
 
   return (
     <>
-     <div className='bg-black  min-h-screen p-12 flex flex-col md:flex md:flex-row justify-between items-center w-full gap-12'>
-
+     <div className='bg-cover bg-center text-white  min-h-screen  flex flex-col justify-between items-center w-full gap-12' style={{backgroundImage: 'url(backgroundGradient-3.jpg)'}}>
+     
+     <Header />
     
-       <div className='md:w-[30%] w-full shadow-lg shadow-[rgb(200,111,67)]  h-auto py-8'>
-      <h2 className='text-[rgb(200,111,67)] text-4xl text-center font-bold mb-12'>Contact
+       <div className='md:w-[30%] w-[80%] outline rounded-lg   h-auto py-8'>
+      <h2 className='text-4xl text-center font-bold mb-12'>Contact
       </h2>
           <div className='w-[90%] m-auto h-auto flex flex-col items-center justify-center bg-cover bg-center rounded-xl'>
           
@@ -101,24 +104,64 @@ const rotate = useTransform(
       </div>
     
 
-      <div className='hidden md:flex'>
+      <div className='flex'>
         <motion.img 
         style={{rotate}}
-        src="/or.png" alt="OR" className='w-[100px]' />
+        src="/spiderweb1.png" alt="OR" className='w-[100px]' />
       </div>
 
-      <div className='text-white text-2xl font-bold flex flex-col justify-center items-center md:hidden'>
-        <p>OR</p>
-        <span>Fill the form</span>
-      </div>
+      <div className='w-[100vw] flex justify-center'>
+        <form className='text-white w-[80%] flex flex-col justify-center items-center gap-6 py-6 outline rounded-lg  md:w-[30%]'>
+        {/* <iframe className='bg-black w-full md:w-[640px]' src="https://docs.google.com/forms/d/e/1FAIpQLSe6uOt5aGROugJrn8I7yHHzbOrshuVPGXqCNjDj9mUcwNNKVQ/viewform?embedded=true" width="640" height="687" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> */}
+        <span className='text-2xl font-bold text-'>Fill the form</span>
+        <div className='flex flex-col w-[80%] gap-2'>
+       <label htmlFor="name" className='font-semibold'>Name</label>
+       <motion.input
+        whileFocus={{ scale: 1.1 }}
+       
+        type="text"
+        id="name" 
+        placeholder='Enter Your name'
+        className='p-2 rounded text-black'
+        />
+        </div>
 
-      <div className='w-[100vw] md:w-auto'>
-        <form className='text-white'>
-        <iframe className='bg-black w-full md:w-[640px]' src="https://docs.google.com/forms/d/e/1FAIpQLSe6uOt5aGROugJrn8I7yHHzbOrshuVPGXqCNjDj9mUcwNNKVQ/viewform?embedded=true" width="640" height="687" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div className='flex flex-col w-[80%] gap-2'>
+          <label htmlFor="email" className='font-semibold'>Email</label>
+       <motion.input
+        whileFocus={{ scale: 1.1 }}
+       
+        type="text"
+        id="email" 
+        placeholder='Enter Your email'
+        className='p-2 rounded text-black'
+        />
+        </div>
+
+        <div className='flex flex-col w-[80%] gap-2'>
+          <label htmlFor="contact" className='font-semibold'>Contact</label>
+       <motion.input
+        whileFocus={{scale: 1.1}}
+        
+        type="text"
+        id="contact" 
+        placeholder='Enter Your contact no.'
+        className='p-2 rounded text-black'
+        />
+        </div>
+
+        <motion.input
+         whileHover={{ scale: 1.1 }}
+         whileTap={{ scale: 0.9 }}
+         type="button"
+         value="Submit"
+         className='p-2 rounded-md bg-blue-600'
+         />
+        
         </form>
       </div>
 
-
+      <Footer />
       </div>
     </>
   )

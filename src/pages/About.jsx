@@ -24,14 +24,15 @@ const Education = () => {
 
   return (
     <>
-    <div className='bg-black py-12 px-8 gap-12 flex flex-col md:flex md:flex-row justify-between min-h-[90vh]'>
+    <div className='py-12 px-8 gap-12 flex flex-col md:flex md:flex-row justify-between min-h-[90vh]'>
     
+   
      
-      <div className='md:w-[30%] shadow-lg shadow-[rgb(200,111,67)] mt-12 h-auto md:h-[60vh] py-6'>
+      <div className='md:w-[30%] shadow-lg mt-12 h-auto outline outline-white rounded-md md:h-[60vh] py-6'>
       <DownToUpAnimation initialY={75}>
-      <h2 className='text-[rgb(200,111,67)] text-4xl mb-6 md:mb-0 text-center font-bold'>About Me
+      <h2 className='text-white text-4xl mb-6  text-center font-bold'>About Me
       </h2>
-          <div className='w-full h-full md:h-[70%] flex items-center justify-center bg-cover bg-center md:mt-6'>
+          <div className='w-full h-full flex items-center justify-center bg-cover bg-center md:mt-10'>
           <div className='text-white w-full px-8'>
 
 
@@ -58,12 +59,12 @@ const Education = () => {
       </div>
       
 
-      <div className='md:w-[30%] shadow-lg shadow-[rgb(200,111,67)] md:mt-12 h-auto py-6 md:h-[60vh]'>
+      <div className='md:w-[30%] shadow-lg md:mt-12 h-auto py-6 md:h-[60vh] outline outline-white rounded-md'>
         
       <DownToUpAnimation initialY={75} >
-      <h2 className='text-[rgb(200,111,67)] text-4xl text-center font-bold mb-6 md:mb-0'>Education
+      <h2 className='text-white text-4xl text-center font-bold mb-6 md:mb-0'>Education
       </h2>
-          <div className='w-full h-full md:h-[70%] flex items-center justify-center bg-cover bg-center rounded-xl md:mt-8'>
+          <div className='w-full h-full flex items-center justify-center bg-cover bg-center rounded-xl md:mt-12'>
           <div className='list-none text-white w-full px-8'>
 
             <div className='my-4'>
@@ -95,6 +96,7 @@ const Education = () => {
       </div>
       
     </div>
+
     </>
   )
 }

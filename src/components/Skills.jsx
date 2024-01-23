@@ -6,13 +6,13 @@ import {motion} from "framer-motion"
 const Skills = () => {
   return (
     <>
-    <div className='bg-black px-8'>
+    <div className='px-8 bg-cover w-full mt-6' >
        
-      <div className='flex justify-center font-bold  shadow-md shadow-[rgb(65,109,109)]'>
-      <h2 className='text-[rgb(65,109,109)] text-4xl text-center font-bold p-8'>Skills</h2>
+      <div className='flex justify-center font-bold'>
+      <h2 className='text-4xl text-center font-bold p-8'>Skills</h2>
       </div>
 
-      <div className='gap-12 md:gap-0 py-32 px-4 flex flex-wrap justify-between items-center'>
+      <div className='gap-12 md:gap-y-16 md:gap-7 py-12 px-4 flex justify-between items-center flex-wrap md:grid md:grid-cols-5'>
 
         <DownToUpAnimation initialY={75}>
         <motion.div
@@ -80,7 +80,7 @@ const Skills = () => {
          whileTap={{scale:0.9}}
          >
          <img src="/redux.png" alt="Redux" className='w-[100px]' />
-         <h3 className='text-white text-center text-2xl font-bold'>Redux Toolkit</h3>
+         <h3 className='text-white text-center text-2xl font-bold'>Redux</h3>
          </motion.div>
          </DownToUpAnimation>
 

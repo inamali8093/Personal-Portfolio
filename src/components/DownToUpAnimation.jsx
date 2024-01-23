@@ -26,6 +26,7 @@ const DownToUpAnimation = ({children,initialY,className}) => {
         initial='hidden'
         animate={mainControls}
         transition={{duration: 0.5, delay:0.25}}
+        className='flex justify-center items-center flex-col'
         >
             {children}
         </motion.div>
