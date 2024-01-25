@@ -49,7 +49,7 @@ const Home = () => {
          whileHover={{scale:1.1}}
          whileTap={{scale:0.9}}
         className='flex md:hidden'>
-            <button className='bg-blue-600 p-2 text-white font-bold rounded-lg mx-12 w-auto flex gap-2'onClick={downloadResume}>Resume <Download /></button>
+            <button className='bg-blue-600 p-2 text-white font-bold rounded-lg mx-12 w-auto flex gap-2 mb-4'onClick={downloadResume}>Resume <Download /></button>
          </motion.div>
 
        
@@ -69,11 +69,16 @@ const Home = () => {
           </div>
           </SideToSideAnimation>
         </div> */}
-        <Skills />
-        <About />
-       <Footer />
-     </div> 
-   
+        
+     </div>
+     <About />
+     <div className='flex flex-col text-white items-center justify-center w-full  bg-cover bg-center' style={{backgroundImage: 'url(./backgroundGradient-4.jpg)'}}>
+
+    
+     <Skills />
+       
+       <Footer /> 
+    </div>
    
       
     </>

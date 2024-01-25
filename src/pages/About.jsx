@@ -28,15 +28,15 @@ const Education = () => {
     
    
      
-      <div className='md:w-[30%] shadow-lg mt-12 h-auto outline outline-white rounded-md md:h-[60vh] py-6'>
+      <div className='md:w-[30%] shadow-lg shadow-[] mt-12 h-auto rounded-md md:h-[60vh] py-6'>
       <DownToUpAnimation initialY={75}>
-      <h2 className='text-white text-4xl mb-6  text-center font-bold'>About Me
+      <h2 className='text-4xl mb-6  text-center font-bold'>About Me
       </h2>
           <div className='w-full h-full flex items-center justify-center bg-cover bg-center md:mt-10'>
-          <div className='text-white w-full px-8'>
+          <div className='w-full px-8'>
 
 
-          <p className='text-white text-lg'>
+          <p className='font-semibold text-lg'>
            Explore my portfolio to see some of my latest projects and check out my blog for web development insights. If you have a project in mind or just want to chat about the latest web trends, feel free to get in touch!
 
            Let's create something amazing together. Get started by <Link to='/contact' className='font-semibold text-amber-300'> Contacting Me</Link> or 
@@ -59,13 +59,13 @@ const Education = () => {
       </div>
       
 
-      <div className='md:w-[30%] shadow-lg md:mt-12 h-auto py-6 md:h-[60vh] outline outline-white rounded-md'>
+      <div className='md:w-[30%] shadow-lg shadow-black text-white bg-black md:mt-12 h-auto py-6 md:h-[60vh]  rounded-md'>
         
       <DownToUpAnimation initialY={75} >
-      <h2 className='text-white text-4xl text-center font-bold mb-6 md:mb-0'>Education
+      <h2 className='text-4xl text-center font-bold mb-6 md:mb-0'>Education
       </h2>
           <div className='w-full h-full flex items-center justify-center bg-cover bg-center rounded-xl md:mt-12'>
-          <div className='list-none text-white w-full px-8'>
+          <div className='list-none w-full px-8'>
 
             <div className='my-4'>
             <div className='flex justify-between '>
