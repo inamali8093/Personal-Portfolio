@@ -11,7 +11,7 @@ import About from './About'
 const Home = () => {
  
   const name = "Inam Ali"
-  const image = './webD.jpg'
+  const bg = "backgroundGradient-6.jpg"
 
   const downloadResume = ()=>{
     fetch("Frontend Resume.pdf")
@@ -29,7 +29,7 @@ const Home = () => {
   
   return (
     <>
-     <div className='flex flex-col text-white items-center justify-center w-full  bg-cover bg-center' style={{backgroundImage: 'url(./backgroundGradient-3.jpg)'}}>
+     <div className='flex flex-col text-white items-center justify-center w-full  bg-cover bg-center' style={{backgroundImage: 'url(./backgroundGradient-6.jpg)'}}>
 
        <Header />
     
