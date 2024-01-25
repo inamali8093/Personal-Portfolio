@@ -5,7 +5,9 @@ import Footer from '../components/Footer'
 
 const Projects = () => {
 
-  const image = './chatAppSignup.png'
+  const image1 = './chatAppSignup.png'
+  const image2 = './blogApp.png'
+  const image3 = './spotifyClone.png'
 
   return (
     // <div className='min-h-screen bg-cover flex justify-center items-center flex-col gap-6' style={{backgroundImage: 'url(backgroundGradient-6.jpg)'}}>
@@ -25,11 +27,22 @@ const Projects = () => {
     //   <Footer />
 
     // </div>
-     <div className='bg-black'>
+     <div className='bg-cover bg-center' style={{backgroundImage: 'url(./backgroundGradient-6.jpg)'}}>
       <Header />
-      <div className='min-h-screen flex justify-center items-center'>
+
+      <div className='min-h-screen flex flex-col justify-center items-center'>
+    
     <h1 className='text-4xl text-white font-bold '>Updating Soon...</h1>
+     
+     {/* <ProjectContainer image={image1} />
+     <ProjectContainer image={image2} />
+     <ProjectContainer image={image3} /> */}
+
+
     </div>
+      
+
+
       <Footer />
     </div>
   )

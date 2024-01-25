@@ -40,7 +40,7 @@ const Skills = () => {
         whileTap={{scale:0.9}}
         >
          <img src="/tailwind-css.png" alt="TailwindCSS" className='w-[100px]' />
-         <h3 className='text-white text-center text-2xl font-bold'>TailwindCSS</h3>
+         <h3 className='text-white text-center text-2xl font-bold'>Tailwind</h3>
          </motion.div>
          </DownToUpAnimation>
 

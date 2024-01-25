@@ -78,7 +78,7 @@ const Education = () => {
             <div className='my-4'>
             <div className='flex justify-between'>
             <li className='text-2xl font-semibold'> Intermediate : 90.8%</li>
-             <p>2019-2020</p>
+             <p>2020</p>
             </div>
             <small>from DDPS Bijnor</small>
             </div>
@@ -86,7 +86,7 @@ const Education = () => {
             <div className='my-4'>
             <div className='flex justify-between'>
             <li className='text-2xl font-semibold'> High School : 84.4%</li>
-             <p>2017-2018</p>
+             <p>2018</p>
             </div>
             <small>from DDPS Bijnor</small>
             </div> 
