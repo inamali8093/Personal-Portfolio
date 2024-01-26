@@ -24,7 +24,7 @@ const ProjectContainer = ({children,image,name,githubLink,className}) => {
     <div className={`w-full md:w-[700px] ${className}`}>
     <div className='flex flex-col md:flex-row shadow-lg hover:shadow-[rgb(200,111,67)] m-8 p-4 gap-4'>
       {/* photo div */}
-      <div className='md:w-[600px] w-[300px] flex flex-col  justify-center items-center'>
+      <div className='md:w-[600px] w-[95%] flex flex-col  justify-center items-center'>
         <img src={image} alt="" />
         <motion.div className='m-2 p-2' whileHover={{scale:1.05}}>
         <Link to='/preview' className='text-white bg-blue-600 rounded-md p-2 '>Preview</Link>
