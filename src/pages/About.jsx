@@ -37,10 +37,11 @@ const Education = () => {
 
 
           <p className='font-semibold text-lg'>
-           Explore my portfolio to see some of my latest projects and check out my blog for web development insights. If you have a project in mind or just want to chat about the latest web trends, feel free to get in touch!
+            Hi, I'm Inam Ali.
+          A passionate full-stack developer with 2 years of experience crafting seamless digital experiences. From developing robust APIs to designing intuitive interfaces, I bring creativity and technical expertise to every project.
 
-           Let's create something amazing together. Get started by <Link to='/contact' className='font-semibold text-amber-300'> Contacting Me</Link> or 
-                  <Link to='/projects' className='font-semibold text-amber-300'> Exploring My Work</Link> .
+           Let's create something amazing together. Get started by <Link to='/contact' className='font-semibold text-slate-800'> Contacting Me</Link> or 
+                  <Link to='/projects' className='font-semibold text-slate-800'> Exploring My Work</Link> .
            </p>
 
           </div>
@@ -52,9 +53,8 @@ const Education = () => {
       
       <div className='flex justify-center items-center'>
       <DownToUpAnimation initialY={100} > 
-        <motion.img src="/react.png"
-        style={{rotate}}
-        className='w-[100px] z-0' alt="" />
+        <motion.img src="./myPhoto.jpeg"
+        className='w-[300px] z-0 rounded-full shadow-lg shadow-black' alt="" />
         </DownToUpAnimation>
       </div>
       

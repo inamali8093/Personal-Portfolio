@@ -10,33 +10,46 @@ const Projects = () => {
   const image3 = './spotifyClone.png'
 
   return (
-    // <div className='min-h-screen bg-cover flex justify-center items-center flex-col gap-6' style={{backgroundImage: 'url(backgroundGradient-6.jpg)'}}>
-
-    //   <Header />
-      
-    //   <ProjectContainer image={image}>
-    //     User can send message in realtime to other users. <br/>
-    //     In this Project, I have used ReactJS for the frontend, redux toolkit for the state management and I have used Appwrite as the backend and authentication service.
-    //   </ProjectContainer>
-
-    //   <ProjectContainer image={image}>
-    //     User can write his blog and can read other's blog. <br/>
-    //     In this project, I have used ReactJS for the frontend, redux tookit for he state management and Appwrite as the backend and authentication service.  
-    //   </ProjectContainer>  
-
-    //   <Footer />
-
-    // </div>
-     <div className='bg-cover bg-center' style={{backgroundImage: 'url(./backgroundGradient-6.jpg)'}}>
+   
+     <div className='bg-cover bg-center' style={{backgroundImage: 'url(./backgroundGradient-5.jpg)'}}>
       <Header />
 
       <div className='min-h-screen flex flex-col justify-center items-center'>
     
-    <h1 className='text-4xl text-white font-bold '>Updating Soon...</h1>
      
-     {/* <ProjectContainer image={image1} />
-     <ProjectContainer image={image2} />
-     <ProjectContainer image={image3} /> */}
+     <ProjectContainer image={image1} name="Chat App" githubLink='#' className='md:-translate-x-60'>
+     User Authentication through Appwrite. state management using redux-toolkit
+    User Can send and receive messages in real time
+    <div className='flex my-1 gap-2 flex-wrap'>
+         <div className='p-1 text-xs outline rounded-md'>React</div>
+         <div className='p-1 text-xs outline rounded-md'>Redux toolkit</div>
+         <div className='p-1 text-xs outline rounded-md'>Appwrite</div>
+         <div className='p-1 text-xs outline rounded-md'>Tailwind</div>
+    </div>
+     </ProjectContainer>
+    
+ <ProjectContainer image={image2} name="Mega-Blog" githubLink='#' className='md:translate-x-60'>
+ Developed a Standard blog writing app using react,react-redux,Appwrite where any
+user can post his blogs and save his blogs on appwrite.
+Improved the performance using different hooks
+<div className='flex my-1 gap-2 flex-wrap'>
+         <div className='p-1 text-xs outline rounded-md'>React</div>
+         <div className='p-1 text-xs outline rounded-md'>Redux toolkit</div>
+         <div className='p-1 text-xs outline rounded-md'>Appwrite</div>
+         <div className='p-1 text-xs outline rounded-md'>Tailwind</div>
+         <div className='p-1 text-xs outline rounded-md'>React hook form</div>
+    </div>
+  </ProjectContainer>
+     <ProjectContainer image={image3} name='mini-spotify' githubLink='#' className='md:-translate-x-60'>
+      Simple spotify clone developed with HTML,CSS and JS in which user can play songs already added in it.
+      <div className='flex my-1 gap-2 flex-wrap'>
+         <div className='p-1 text-xs outline rounded-md'>HTML</div>
+         <div className='p-1 text-xs outline rounded-md'>CSS</div>
+         <div className='p-1 text-xs outline rounded-md'>Javascript</div>
+         
+    </div>
+
+     </ProjectContainer>
 
 
     </div>
