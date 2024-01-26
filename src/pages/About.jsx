@@ -24,7 +24,7 @@ const Education = () => {
 
   return (
     <>
-    <div className='py-12 px-8 gap-12 flex flex-col md:flex md:flex-row justify-between min-h-[90vh]'>
+    <div className='py-12 px-8 gap-12 flex flex-col md:flex md:flex-row justify-between min-h-[90vh] bg-black/20 bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]'>
     
    
      
@@ -54,7 +54,7 @@ const Education = () => {
       <DownToUpAnimation initialY={100} > 
         <motion.img src="/react.png"
         style={{rotate}}
-        className='w-[300px] z-0' alt="" />
+        className='w-[100px] z-0' alt="" />
         </DownToUpAnimation>
       </div>
       
